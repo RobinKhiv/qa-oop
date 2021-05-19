@@ -23,4 +23,7 @@ public class Book {
 	public void close() {
 		this.isOpen = false;
 	}
+	public String getTitle() {
+		return this.title;
+	}
 }
