@@ -6,10 +6,10 @@ public class Person {
 	public String gender;
 	public boolean isBreathing;
 	
-	Person(String name){
+	public Person(String name){
 		this(name, 0, "");
 	}
-	Person(String name, int age, String gender){
+	public Person(String name, int age, String gender){
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
