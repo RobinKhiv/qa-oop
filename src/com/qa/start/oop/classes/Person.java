@@ -17,4 +17,7 @@ public class Person {
 	public String getName() {
 		return this.name;
 	}
+	public void reads(String b) {
+		System.out.println(this.name + " reads: " + b);
+	}
 }
