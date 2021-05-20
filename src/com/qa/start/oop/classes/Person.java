@@ -6,6 +6,9 @@ public class Person {
 	public String gender;
 	public boolean isBreathing;
 	
+	public Person() {
+        this("Unknown");
+	}
 	public Person(String name){
 		this(name, 0, "");
 	}
@@ -15,8 +18,11 @@ public class Person {
 		this.gender = gender;
 	}
 	public String getName() {
-		return this.name;
-	}
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 	public void reads(String b) {
 		System.out.println(this.name + " reads: " + b);
 	}
