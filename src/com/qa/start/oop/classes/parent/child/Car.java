@@ -6,7 +6,10 @@ public class Car extends Vehicle {
     private int numOfAirbag;
     
 	public Car(){
-		this("unknown","unknown",0);
+		this("unknown");
+	}
+	public Car(String brand) {
+		this(brand, "unknown", 4);
 	}
 	public Car(String brand, String color, int numOfWheel) {
 		super(brand, color, numOfWheel);
