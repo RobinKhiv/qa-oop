@@ -1,8 +1,36 @@
 package com.qa.start.oop.abstraction.base;
 
-public abstract class Vehicle {
-	//1). Using Vehicle as a base class, 
-	// create three derived classes (car, motorcycle etc.), each derived class should have its own attributes in addition to the normal Vehicle attributes. 
-	//2). Using a List implementation, 
-	// store all your vehicles in a Garage class.  
+public abstract class Vehicle implements Drivable {
+	private String brand;
+	private String color;
+	private int numOfWheel;
+	
+	public Vehicle() {
+		this("unknown","unknown", 0);
+	}
+	public Vehicle(String brand, String color, int numOfWheel) {
+		this.color = color;
+		this.brand = brand;
+		this.numOfWheel = numOfWheel;
+	}
+	public void accelerating() {
+		System.out.println( this.brand + " is accelerating");
+		
+	}
+	public void braking() {
+		System.out.println(this.brand + " is braking");
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public void setWheel(int w) {
+		this.numOfWheel = w;
+	}
+	public int getWheel() {
+		return numOfWheel;
+	}
+	
 }
