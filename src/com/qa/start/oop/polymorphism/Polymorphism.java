@@ -11,5 +11,13 @@ public class Polymorphism {
 		Vehicle car1 = new Car("Mazda");
 		Vehicle moto = new Motorcycle("harley");
 		//2). Using a List implementation, store all your vehicles in a Garage class.
+		Garage g = new Garage();
+		double bill = 0d;
+		g.add(car1);
+		g.add(moto);
+		bill = g.getBill();
+		
+		System.out.println("Garage bill: $" + bill );
+		
 	}
 }
