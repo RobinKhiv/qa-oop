@@ -43,8 +43,6 @@ public class Garage {
 		storage.remove(v);
 	}
 	public void emptyGarage() {
-		Iterator<Vehicle> iter = storage.listIterator();
-		while(iter.hasNext())
-			iter.remove();
+		storage.removeAll(storage);
 	}
 }

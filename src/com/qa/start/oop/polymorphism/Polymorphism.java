@@ -26,5 +26,10 @@ public class Polymorphism {
 		g.remove(boat);
 		bill = g.getBill();
 		System.out.println("Garage bill w/o boat: $" + bill);
+		
+		g.emptyGarage();
+		bill = g.getBill();
+		System.out.println("Garage bill w/ no vehicles: $" + bill);
+		
 	}
 }
