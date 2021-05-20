@@ -1,6 +1,6 @@
-package com.qa.start.oop.abstraction.base.child;
+package com.qa.start.oop.classes.parent.child;
 
-import com.qa.start.oop.abstraction.base.Vehicle;
+import com.qa.start.oop.classes.parent.Vehicle;
 
 public class Motorcycle extends Vehicle {
 	

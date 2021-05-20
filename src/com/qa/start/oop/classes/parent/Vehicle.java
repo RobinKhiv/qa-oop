@@ -1,4 +1,6 @@
-package com.qa.start.oop.abstraction.base;
+package com.qa.start.oop.classes.parent;
+
+import com.qa.start.oop.classes.parent.interfaces.Drivable;
 
 public abstract class Vehicle implements Drivable {
 	private String brand;
