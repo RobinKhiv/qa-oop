@@ -6,7 +6,10 @@ public class Motorcycle extends Vehicle {
 	boolean hasPassengerSeat;
 	
 	public Motorcycle() {
-		this("unknown", "unknown", 2);
+		this("unknown");
+	}
+	public Motorcycle(String brand) {
+		this(brand, "unknown", 2);
 	}
 	public Motorcycle(String brand, String color, int numOfWheel) {
 		super(brand,color, numOfWheel);
