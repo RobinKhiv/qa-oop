@@ -22,12 +22,12 @@ public class Manager extends Employee{
 		employeeUnderManager.add(emp);
 	}
 	//a method removeEmployee() that can remove an employee from a list
-	public void removeEmployee(String name) {
+	public void removeEmployee(Employee e) {
 		Iterator<Employee> iter = employeeUnderManager.listIterator();
-		Employee e;
+		Employee eTmp;
 		while(iter.hasNext()) {
-			e = iter.next();
-			if(e.getName() == name)
+			eTmp = iter.next();
+			if(eTmp == e)
 				iter.remove();
 		}
 	}

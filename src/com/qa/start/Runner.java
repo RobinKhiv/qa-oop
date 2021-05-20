@@ -29,7 +29,7 @@ public class Runner {
 		m.addEmployee(t2);
 		System.out.println(m.employeeUnderManager());
 		
-		m.removeEmployee("John");
+		m.removeEmployee(t2);
 		System.out.println(m.employeeUnderManager());
 		
 	}
