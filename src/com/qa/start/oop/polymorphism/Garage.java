@@ -1,6 +1,7 @@
 package com.qa.start.oop.polymorphism;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import com.qa.start.oop.classes.parent.Vehicle;
@@ -40,5 +41,10 @@ public class Garage {
 	}
 	public void remove(Vehicle v) {
 		storage.remove(v);
+	}
+	public void emptyGarage() {
+		Iterator<Vehicle> iter = storage.listIterator();
+		while(iter.hasNext())
+			iter.remove();
 	}
 }
