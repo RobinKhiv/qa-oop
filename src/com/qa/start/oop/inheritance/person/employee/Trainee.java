@@ -1,9 +1,10 @@
-package com.qa.start.oop.classes.person.employee;
+package com.qa.start.oop.inheritance.person.employee;
 
 import java.util.List;
-import java.util.ArrayList;
 
-import com.qa.start.oop.classes.person.Employee;
+import com.qa.start.oop.inheritance.person.Employee;
+
+import java.util.ArrayList;
 
 public class Trainee extends Employee{
 	//a field bursary of type double

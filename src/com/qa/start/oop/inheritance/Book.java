@@ -1,4 +1,4 @@
-package com.qa.start.oop.classes;
+package com.qa.start.oop.inheritance;
 
 public class Book {
 	private String title;

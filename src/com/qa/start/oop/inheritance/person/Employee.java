@@ -1,6 +1,6 @@
-package com.qa.start.oop.classes.person;
+package com.qa.start.oop.inheritance.person;
 
-import com.qa.start.oop.classes.Person;
+import com.qa.start.oop.inheritance.Person;
 
 public class Employee extends Person {
 	//a field annualSalary of type double

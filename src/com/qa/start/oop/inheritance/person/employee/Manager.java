@@ -1,10 +1,10 @@
-package com.qa.start.oop.classes.person.employee;
+package com.qa.start.oop.inheritance.person.employee;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.qa.start.oop.classes.person.Employee;
+import com.qa.start.oop.inheritance.person.Employee;
 
 public class Manager extends Employee{
 	//Create a Manager class that derives from Employee. This class must have:
