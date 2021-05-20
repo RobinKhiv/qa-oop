@@ -1,7 +1,6 @@
 package com.qa.start.oop.polymorphism;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import com.qa.start.oop.classes.parent.Vehicle;
