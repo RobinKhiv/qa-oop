@@ -12,6 +12,7 @@ public class Polymorphism {
 		Vehicle car1 = new Car("Mazda");
 		Vehicle moto = new Motorcycle("harley");
 		Vehicle boat = new Boat("Sea Ray");
+		Vehicle moto2 = new Motorcycle("Ducati");
 		//2). Using a List implementation, store all your vehicles in a Garage class.
 		
 		Garage g = new Garage();
@@ -20,12 +21,17 @@ public class Polymorphism {
 		g.add(car1);
 		g.add(moto);
 		g.add(boat);
+		g.add(moto2);
 		bill = g.getBill();
 		System.out.println("Garage bill: $" + bill );
 		
-		g.remove(boat);
+		g.removeById(0);
 		bill = g.getBill();
-		System.out.println("Garage bill w/o boat: $" + bill);
+		System.out.println("Garage bill w/o car: $" + bill);
+		
+		g.add(car1);
+		g.removeByType(moto);
+		System.out.println("Garage bill w/o motorcycles: " + bill);
 		
 		g.emptyGarage();
 		bill = g.getBill();

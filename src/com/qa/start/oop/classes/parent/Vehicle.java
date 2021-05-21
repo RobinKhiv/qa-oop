@@ -34,5 +34,10 @@ public abstract class Vehicle implements Drivable {
 	public int getWheel() {
 		return numOfWheel;
 	}
-	
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 }
